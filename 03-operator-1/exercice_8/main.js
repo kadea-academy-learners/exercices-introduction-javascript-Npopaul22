@@ -21,11 +21,4 @@ let totalDepenses = loyer + nourriture + transport + autresDepenses;
 // 7️⃣ Calculer le reste
 let reste = salaireMensuel - totalDepenses;
 
-// 🔹 Afficher les résultats (optionnel pour vérification)
-console.log("Salaire mensuel:", salaireMensuel);
-console.log("Loyer:", loyer);
-console.log("Nourriture:", nourriture);
-console.log("Transport:", transport);
-console.log("Autres dépenses:", autresDepenses);
-console.log("Total des dépenses:", totalDepenses);
-console.log("Reste:", reste);
+

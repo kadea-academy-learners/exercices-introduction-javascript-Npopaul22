@@ -35,12 +35,3 @@ let partJoseph = partDeuxieme;
 // Sarah
 let partSarah = partDeuxieme;
 
-// === Affichage des résultats ===
-console.log("Répartition de l'héritage de Monsieur Jean MUKUNA :");
-console.log("Paul :", partPaul.toLocaleString(), "CDF");
-console.log("Marie :", partMarie.toLocaleString(), "CDF");
-console.log("Éric :", partEric.toLocaleString(), "CDF");
-console.log("Claire :", partClaire.toLocaleString(), "CDF");
-console.log("Madame MUKUNA :", partMadameMukuna.toLocaleString(), "CDF");
-console.log("Joseph :", partJoseph.toLocaleString(), "CDF");
-console.log("Sarah :", partSarah.toLocaleString(), "CDF");
