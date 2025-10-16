@@ -1,10 +1,12 @@
+// Exercice 4 : la somme de deux nombres
+
 // Déclaration des variables
 const a = 5;
 const b = 8;
 
-// Affichage de la somme
-console.log(a + b); 
+// Calcul de la somme
+const somme = a + b;
 
-// Résultat : 13
-// let somme = a + b;
-// console.log(somme);
+// Affichage du résultat
+console.log("La somme de a et b est :", somme);
+

@@ -1,8 +1,15 @@
-// Stocker une température en Celsius
-let celsius = 25;
+// Exercice 5 : Conversion de la température de Celsius en Fahrenheit
 
-// Convertir en Fahrenheit
-let fahrenheit = (celsius * 9/5) + 32;
+// Déclaration de la température en Celsius
+let temperatureCelsius = 25;
 
-// Afficher le résultat
-console.log("Température en Fahrenheit :", fahrenheit);
+// Conversion en Fahrenheit
+let temperatureFahrenheit = (temperatureCelsius * 9) / 5 + 32;
+
+// Affichage du résultat
+console.log(
+  `${temperatureCelsius}°C équivaut à ${temperatureFahrenheit}°F`
+);
+
+// Exportation pour les tests Jest
+module.exports = { temperatureCelsius, temperatureFahrenheit };
