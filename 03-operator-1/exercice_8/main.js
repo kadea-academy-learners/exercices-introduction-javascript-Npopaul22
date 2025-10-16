@@ -1,15 +1,24 @@
 // Exercice 8 : Gestion d’un budget mensuel
+// Déclaration des variables
+const salaireMensuel = 500000; // Exemple
+const loyer = salaireMensuel * 0.3;
+let nourriture = salaireMensuel * 0.2;
+let transport = salaireMensuel * 0.1;
+let autresDepenses = 50 + 25; // exemple en unités arbitraires
+let totalDepenses = loyer + nourriture + transport + autresDepenses;
+let reste = salaireMensuel - totalDepenses;
 
-const salaire = 500000;       // en CDF
-const loyer = 200000;
-let nourriture = 150000;
-let transport = 50000;
-let autres = 30000;
-
-const depensesTotales = loyer + nourriture + transport + autres;
-const reste = salaire - depensesTotales;
-
-console.log("Dépenses totales :", depensesTotales);
+// Affichage
+console.log("Dépenses totales :", totalDepenses);
 console.log("Reste après dépenses :", reste);
 
-module.exports = { salaire, loyer, nourriture, transport, autres, depensesTotales, reste };
+// Exportation pour les tests Jest
+module.exports = {
+  salaireMensuel,
+  loyer,
+  nourriture,
+  transport,
+  autresDepenses,
+  totalDepenses,
+  reste
+};
