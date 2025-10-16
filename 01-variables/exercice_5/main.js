@@ -1,5 +1,4 @@
 // Exercice 5 : Conversion de la température de Celsius en Fahrenheit
-
 // Déclaration de la température en Celsius
 let temperatureCelsius = 25;
 
@@ -13,3 +12,4 @@ console.log(
 
 // Exportation pour les tests Jest
 module.exports = { temperatureCelsius, temperatureFahrenheit };
+
