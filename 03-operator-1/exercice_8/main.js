@@ -1,29 +1,31 @@
 // Exercice 8
-// 1. Salaire mensuel
+// 1️⃣ Déclarer le salaire mensuel
 let salaireMensuel = 500;
 
-// 2. Loyer = 30% du salaire
-let loyer = salaireMensuel * 0.30;
+// 2️⃣ Calculer le loyer (30% du salaire)
+let loyer = salaireMensuel * 0.3;
 
-// 3. Nourriture = 20% du salaire
-let nourriture = salaireMensuel * 0.20;
+// 3️⃣ Calculer la nourriture (20% du salaire)
+let nourriture = salaireMensuel * 0.2;
 
-// 4. Transport = 10% du salaire
-let transport = salaireMensuel * 0.10;
+// 4️⃣ Calculer le transport (10% du salaire)
+let transport = salaireMensuel * 0.1;
 
-// 5. Autres dépenses = 50 + 25
-let autresDepenses = 50 + 25;
+// 5️⃣ Déclarer autresDepenses et ajouter 25 à sa valeur initiale de 50
+let autresDepenses = 50;
+autresDepenses += 25; 
 
-// Calcul des dépenses totales
-let depensesTotales = loyer + nourriture + transport + autresDepenses;
-// Calcul du reste après dépenses
-let reste = salaireMensuel - depensesTotales;
+// 6️⃣ Calculer le total des dépenses
+let totalDepenses = loyer + nourriture + transport + autresDepenses;
 
-// Affichage des résultats
-console.log("Salaire mensuel :", salaireMensuel);
-console.log("Loyer :", loyer);
-console.log("Nourriture :", nourriture);
-console.log("Transport :", transport);
-console.log("Autres dépenses :", autresDepenses);
-console.log("Dépenses totales :", depensesTotales);
-console.log("Reste après dépenses :", reste);
+// 7️⃣ Calculer le reste
+let reste = salaireMensuel - totalDepenses;
+
+// 🔹 Afficher les résultats (optionnel pour vérification)
+console.log("Salaire mensuel:", salaireMensuel);
+console.log("Loyer:", loyer);
+console.log("Nourriture:", nourriture);
+console.log("Transport:", transport);
+console.log("Autres dépenses:", autresDepenses);
+console.log("Total des dépenses:", totalDepenses);
+console.log("Reste:", reste);
