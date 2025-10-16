@@ -1,22 +1,18 @@
 // Exercice 8
-// Écrivez votre code ici
-// Contexte : Gestion d’un budget mensuel simple.
-// Objectif : Calculer les dépenses totales et le reste du salaire.
-
-const salaireMensuel = 500000;
-
-// Répartition des dépenses
-const loyer = salaireMensuel * 0.3;        // 30%
-const nourriture = salaireMensuel * 0.2;   // 20%
-const transport = salaireMensuel * 0.1;    // 10%
-const autresDepenses = 50000;              // Montant fixe
-
-const totalDepenses = loyer + nourriture + transport + autresDepenses;
-const reste = salaireMensuel - totalDepenses;
-
+// Déclaration des variables
+const salaireMensuel = 500000; // Exemple
+const loyer = salaireMensuel * 0.3;
+let nourriture = salaireMensuel * 0.2;
+let transport = salaireMensuel * 0.1;
+let autresDepenses = 50 + 25; // exemple en unités arbitraires
+let totalDepenses = loyer + nourriture + transport + autresDepenses;
+let reste = salaireMensuel - totalDepenses;
+ 
+// Affichage
 console.log("Dépenses totales :", totalDepenses);
 console.log("Reste après dépenses :", reste);
 
+// Exportation pour les tests Jest
 module.exports = {
   salaireMensuel,
   loyer,
@@ -24,5 +20,6 @@ module.exports = {
   transport,
   autresDepenses,
   totalDepenses,
-  reste,
+  reste
 };
+
