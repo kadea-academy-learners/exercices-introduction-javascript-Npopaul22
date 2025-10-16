@@ -23,4 +23,11 @@ console.log("Sarah :", sarah, "CDF");
 module.exports = {
   clair,
   madameMukuna,
+  marie,
+  paul,
+  sarah,
+  totalHeritage,
+  eric,
+  joseph,
+  
 };
