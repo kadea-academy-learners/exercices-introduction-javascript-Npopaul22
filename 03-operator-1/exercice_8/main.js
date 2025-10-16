@@ -1,31 +1,15 @@
-// Exercice 8
-// 1️⃣ Déclarer le salaire mensuel
-let salaireMensuel = 500;
+// Exercice 8 : Gestion d’un budget mensuel
 
-// 2️⃣ Calculer le loyer (30% du salaire)
-let loyer = salaireMensuel * 0.3;
+const salaire = 500000;       // en CDF
+const loyer = 200000;
+let nourriture = 150000;
+let transport = 50000;
+let autres = 30000;
 
-// 3️⃣ Calculer la nourriture (20% du salaire)
-let nourriture = salaireMensuel * 0.2;
+const depensesTotales = loyer + nourriture + transport + autres;
+const reste = salaire - depensesTotales;
 
-// 4️⃣ Calculer le transport (10% du salaire)
-let transport = salaireMensuel * 0.1;
-
-// 5️⃣ Déclarer autresDepenses et ajouter 25 à sa valeur initiale de 50
-let autresDepenses = 50;
-autresDepenses += 25; 
-
-// 6️⃣ Calculer le total des dépenses
-let totalDepenses = loyer + nourriture + transport + autresDepenses;
-
-// 7️⃣ Calculer le reste
-let reste = salaireMensuel - totalDepenses;
-
-// Affichage des résultats
-console.log("Salaire mensuel :", salaireMensuel);
-console.log("Loyer :", loyer);
-console.log("Nourriture :", nourriture);
-console.log("Transport :", transport);
-console.log("Autres dépenses :", autresDepenses);
 console.log("Dépenses totales :", depensesTotales);
 console.log("Reste après dépenses :", reste);
+
+module.exports = { salaire, loyer, nourriture, transport, autres, depensesTotales, reste };
