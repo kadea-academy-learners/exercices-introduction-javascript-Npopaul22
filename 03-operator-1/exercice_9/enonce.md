@@ -1,74 +1,47 @@
-# Répartition de l'héritage de Monsieur Jean MUKUNA
+// Valeur totale de l'héritage
+let maison = 60000000;
+let terrains = 40000000;
+let liquidites = 20000000;
+let heritageTotal = maison + terrains + liquidites;
 
-Monsieur Jean MUKUNA est décédé à Kinshasa, laissant derrière lui un patrimoine de: 
+// Répartition par catégorie
+let partPremiereCategorie = heritageTotal * 0.75;
+let partDeuxiemeCategorie = heritageTotal * 0.25;
 
-- Une maison familiale estimée à  **60.000.000 CDF**
-- Des terrains estimés à **40.000.000 CDF**
-- Des liquidités de **20.000.000 CDF**
+// === Première catégorie : enfants ===
+// Chaque enfant ou groupe d'enfants reçoit 1/3 de 75%
+let partEnfant = partPremiereCategorie / 3;
 
-Il laisse derrière lui :
+// Paul
+let partPaul = partEnfant;
 
-- Trois enfants :
-    1. Paul (vivant)
-    2. Marie (vivante)
-    3. Alain (décédé), mais ayant laissé deux enfants : Éric et Claire (petits-enfants de Jean MUKUNA)
+// Marie
+let partMarie = partEnfant;
 
-- Son épouse : Madame MUKUNA (vivante)
+// Alain (représenté par Éric et Claire)
+let partAlain = partEnfant;
+let partEric = partAlain / 2;
+let partClaire = partAlain / 2;
 
-- Ses deux parents sont tous décédés
+// === Deuxième catégorie : conjoint + frères ===
+// Chaque héritier reçoit 1/3 de 25%
+let partDeuxieme = partDeuxiemeCategorie / 3;
 
-- Deux frères germains :
+// Madame MUKUNA
+let partMadameMukuna = partDeuxieme;
 
-    1. Joseph (vivant)
-    2. Daniel (décédé), mais ayant une fille, Sarah (nièce du défunt)
+// Joseph
+let partJoseph = partDeuxieme;
 
-- Une tante maternelle, Viviane
+// Sarah
+let partSarah = partDeuxieme;
 
-## Héritiers et catégories
-
-### Première catégorie : Les enfants du défunt
-Les enfants du défunt (vivants ou représentés par leurs propres enfants) forment la première catégorie d’héritiers. Ils reçoivent **75% de l’héritage**
-
-- **Paul** (vivant) : 1 part
-- **Marie** (vivante) : 1 part
-- **Alain** (décédé, représenté par Éric et Claire) : 1 part (à partager entre Éric et Claire)
-
-### Deuxième catégorie : Le conjoint survivant et les frères/sœurs
-Le conjoint survivant et les frères vivants ou représentés forment la deuxième catégorie. Ils se partagent **25% de l’héritage**, à parts égales.
-
-- **Madame MUKUNA** (épouse vivante)
-- **Joseph** (frère vivant)
-- **Sarah** (nièce, représentant Daniel, frère décédé)
-
-## Calcul des parts
-
-### Première catégorie : Répartition des 75% 
-Les parts sont réparties également entre les enfants vivants et les enfants d’un enfant décédé.
-
-- **Paul** : 1/3,
-- **Marie** : 1/3,
-- **Alain** (représenté par Éric et Claire) : 1/3 
-    - **Éric** : 1/2 
-    - **Claire** : 1/2 
-
-### Deuxième catégorie : Répartition des 25% 
-Les parts sont réparties également entre le conjoint survivant, le frère vivant, et la nièce représentant le frère décédé.
-
-- **Madame MUKUNA** : 1/3 
-- **Joseph** : 1/3 
-- **Sarah** : 1/3 
-
-## Taches
-Ton programme doit permettre de calculer la part de chaque héritier en fonction des règles ci-dessus.
-
-Et afficher l'héritage de chaque héritier:
-- **Paul** 
-- **Marie** 
-- **Éric** 
-- **Claire** 
-- **Madame MUKUNA** 
-- **Joseph** 
-- **Sarah** 
-
-
-
+// === Affichage des résultats ===
+.log("Répartition de l'héritage de Monsieur Jean MUKUNA :");
+console.log("Paul :", partPaul.toLocaleString(), "CDF");
+console.log("Marie :", partMarie.toLocaleString(), "CDF");
+console.log("Éric :", partEric.toLocaleString(), "CDF");
+console.log("Claire :", partClaire.toLocaleString(), "CDF");
+console.log("Madame MUKUNA :", partMadameMukuna.toLocaleString(), "CDF");
+console.log("Joseph :", partJoseph.toLocaleString(), "CDF");
+console.log("Sarah :", partSarah.toLocaleString(), "CDF");

@@ -1,8 +1,12 @@
-// Stocker une température en Celsius
+// main.js
 let celsius = 25;
 
-// Convertir en Fahrenheit
-let fahrenheit = (celsius * 9/5) + 32;
+// Affichage pour Jest
+console.log((celsius * 9/5) + 32);
 
-// Afficher le résultat
-console.log("Température en Fahrenheit :", fahrenheit);
+// Fonction exportée pour test
+function celsiusToFahrenheit(c) {
+  return (c * 9/5) + 32;
+}
+
+module.exports = { celsiusToFahrenheit };
